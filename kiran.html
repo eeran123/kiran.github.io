@@ -1,304 +1,180 @@
 <!DOCTYPE html>
-<!-- Created By RaysOnlineSolution -->
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiran Kumar Acharya | Web Scraper & Data Scientist</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiran Kumar Acharya | Senior Web Scraper & Data Scientist</title>
+  <meta name="description" content="Portfolio of Kiran Kumar Acharya, Senior Web Scraper and Data Scientist specializing in real estate, e-commerce, and job platform data solutions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
+  <header class="site-header" id="home">
+    <nav class="navbar container">
+      <a class="brand" href="#home">Kiran<span>Portfolio</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#expertise">Expertise</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy reveal">
+        <p class="kicker">Senior Web Scraper and Data Scientist</p>
+        <h1>Transforming messy web data into decision-ready intelligence.</h1>
+        <p class="hero-summary">
+          I hold a Bachelor in Software Engineering from Pokhara University and currently work as a Senior Web Scraper and Data Scientist. I design robust scraping systems, scalable data pipelines, and analytics workflows for high-impact business use cases.
+        </p>
+        <div class="hero-chips">
+          <span>Bachelor in Software Engineering</span>
+          <span>Pokhara University</span>
+          <span>Automation at scale</span>
+        </div>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Work With Me</a>
+        </div>
+      </div>
+      <div class="hero-card reveal">
+        <img src="kiran.jpg" alt="Kiran Kumar Acharya portrait">
+        <div class="hero-card-content">
+          <p class="hero-card-title">Current Role</p>
+          <h2>Senior Web Scraper</h2>
+          <p>Data Scientist focused on practical, production-ready intelligence systems.</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="kicker">Profile</p>
+          <h2>Built on software engineering, proven through production data systems.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-panel reveal">
+            <h3>Education</h3>
+            <p>Bachelor in Software Engineering, Pokhara University.</p>
+          </article>
+          <article class="about-panel reveal">
+            <h3>Current Position</h3>
+            <p>Senior Web Scraper and Data Scientist delivering resilient extraction and analysis workflows.</p>
+          </article>
+          <article class="about-panel reveal">
+            <h3>Core Strength</h3>
+            <p>End-to-end ownership from website extraction to clean datasets, BI insights, and model-ready data.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="kicker">Project Showcase</p>
+          <h2>Real-world scraping and data science solutions across major business domains.</h2>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat-card">
+            <strong>Real Estate</strong>
+            <span>Large-scale listing extraction, rent trend datasets, and property intelligence pipelines.</span>
+          </div>
+          <div class="stat-card">
+            <strong>E-commerce</strong>
+            <span>Product catalog monitoring, price intelligence, stock tracking, and competitor analysis.</span>
+          </div>
+          <div class="stat-card">
+            <strong>Job Platforms</strong>
+            <span>Job market data collection, salary trend tracking, and role-demand analytics.</span>
+          </div>
+          <div class="stat-card">
+            <strong>Other Domains</strong>
+            <span>News, directories, and niche websites transformed into structured decision-ready datasets.</span>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <p class="project-type">Real Estate</p>
+            <h3>Multi-portal property intelligence engine</h3>
+            <p>Unified pipelines to collect listings, normalize location features, and identify price movement patterns from multiple real estate websites.</p>
+            <div class="tags"><span>Scrapy</span><span>Proxy Rotation</span><span>Geo Data</span></div>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-type">E-commerce</p>
+            <h3>High-frequency product and pricing monitor</h3>
+            <p>Automated hourly extraction for product data, discount tracking, and availability alerts with resilient anti-break logic.</p>
+            <div class="tags"><span>Python</span><span>Scheduling</span><span>ETL</span></div>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-type">Jobs</p>
+            <h3>Job demand and skill trend analyzer</h3>
+            <p>Aggregated job posts from major portals to reveal skill demand, salary ranges, and role growth by sector.</p>
+            <div class="tags"><span>Data Analysis</span><span>Pandas</span><span>Visualization</span></div>
+          </article>
+          <article class="project-card reveal">
+            <p class="project-type">Cross-domain</p>
+            <h3>Reusable scraping framework</h3>
+            <p>Template-based architecture to launch new crawlers quickly with robust retries, parsing modules, and quality checks.</p>
+            <div class="tags"><span>Architecture</span><span>Quality</span><span>Scaling</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="expertise section" id="expertise">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="kicker">Expertise</p>
+          <h2>From extraction to insight, engineered for reliability.</h2>
+        </div>
+
+        <div class="expertise-grid">
+          <article class="expertise-card reveal">
+            <h3>Web Scraping Engineering</h3>
+            <p>Dynamic websites, pagination, retries, anti-bot strategies, and stable crawler operations.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h3>Data Science and Analytics</h3>
+            <p>Data cleaning, exploratory analysis, trend modeling, and practical business intelligence outputs.</p>
+          </article>
+          <article class="expertise-card reveal">
+            <h3>Pipeline Automation</h3>
+            <p>Production pipelines with scheduling, storage integration, and reproducible, maintainable data workflows.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact section" id="contact">
+    <div class="container contact-shell reveal">
+      <div>
+        <p class="kicker">Contact</p>
+        <h2>Let us build your next data pipeline.</h2>
+        <p>If you need dependable scraping systems and data science support for real estate, e-commerce, jobs, or custom domains, I am available to collaborate.</p>
+      </div>
+      <div class="contact-details">
+        <p><strong>Name:</strong> Kiran Kumar Acharya</p>
+        <p><strong>Email:</strong> keeran.sharma10@gmail.com</p>
+        <p><strong>Address:</strong> Jaljala-8, Parbat, Nepal</p>
+      </div>
     </div>
-<nav class="navbar">
-        <div class="max-width">
-            <div class="logo">
-                <a href="#home">Kiran<span>Portfolio</span></a>
-            </div>
-<ul class="menu">
-<li><a href="#home" class="menu-btn">Home</a></li>
-<li><a href="#about" class="menu-btn">About</a></li>
-<li><a href="#services" class="menu-btn">Services</a></li>
-<li><a href="#skills" class="menu-btn">Skills</a></li>
-<li><a href="#contact" class="menu-btn">Contact</a></li>
-</ul>
-<div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-</div>
-</nav>
+  </section>
 
-    <!-- home section start -->
-    <section class="home" id="home">
-        <div class="max-width">
-            <div class="home-content">
-                <div class="text-1">
-Hello, my name is</div>
-<div class="text-2">
-Kiran Kumar</div>
-<div class="text-3">
-                Acharya</div>
-<div class="text-4">
-And I'm a <span class="typing"></span></div>
-                <a href="#contact">Hire me</a>
-            </div>
-</div>
-</section>
+  <footer>
+    <p>Copyright 2026 Kiran Kumar Acharya. All rights reserved.</p>
+  </footer>
 
-    <!-- about section start -->
-    <section class="about" id="about">
-        <div class="max-width">
-            <h2 class="title">
-About me</h2>
-<div class="about-content">
-                <div class="column left">
-                    <img src="kiran.jpg" alt="">
-                </div>
-<div class="column right">
-                    <div class="text">
-I'm Kiran and I'm a <span class="typing-2"></span></div>
-<p>
-I build reliable web scraping pipelines and turn raw web data into actionable insights using data science. I focus on data collection automation, cleaning, analysis, and reporting so businesses can make faster decisions.</p>
-<a href="#contact">Let's collaborate</a>
-                </div>
-</div>
-</div>
-</section>
-
-    <!-- services section start -->
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">
-My services</h2>
-<div class="serv-content">
-                <div class="card">
-                    <div class="box">
-                                        <i class="fas fa-spider"></i>
-                        <div class="text">
-                Web Scraping</div>
-<p>
-                I develop scalable scrapers for e-commerce, jobs, news, and directory websites with robust handling for pagination, retries, and dynamic pages.
-</p>
-</div>
-</div>
-<div class="card">
-                    <div class="box">
-                        <i class="fas fa-chart-line"></i>
-                        <div class="text">
-                Data Analysis</div>
-<p>
-                I clean and structure scraped datasets, perform exploratory analysis, and build clear dashboards and summaries for business intelligence.</p>
-</div>
-</div>
-<div class="card">
-                    <div class="box">
-                                        <i class="fas fa-database"></i>
-                        <div class="text">
-                Data Science Solutions</div>
-<p>
-                I create predictive and classification models, evaluate performance, and deliver practical machine learning solutions for real-world problems.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-    <!-- skills section start -->
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">
-My skills</h2>
-<div class="skills-content">
-                <div class="column left">
-                    <div class="text">
-                My technical skills and experience.</div>
-<p>
-                I work across the complete data pipeline: extracting data from websites, transforming it into structured datasets, analyzing trends, and presenting findings in a business-friendly format. I prioritize clean code, reproducible workflows, and measurable outcomes.</p><a href="#contact">Read more</a>
-                </div>
-<div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                                            <span>Python</span>
-                                            <span>92%</span>
-                        </div>
-                <div class="line python">
-</div>
-</div>
-<div class="bars">
-                        <div class="info">
-                                            <span>Web Scraping (BeautifulSoup/Scrapy)</span>
-                                            <span>90%</span>
-                        </div>
-                <div class="line scraping">
-</div>
-</div>
-<div class="bars">
-                        <div class="info">
-                                            <span>Data Analysis (Pandas/NumPy)</span>
-                                            <span>88%</span>
-                        </div>
-                <div class="line analysis">
-</div>
-</div>
-<div class="bars">
-                        <div class="info">
-                                            <span>Machine Learning</span>
-                                            <span>82%</span>
-                        </div>
-                <div class="line ml">
-</div>
-</div>
-<div class="bars">
-                        <div class="info">
-                                            <span>SQL & Data Management</span>
-                                            <span>84%</span>
-                        </div>
-                <div class="line sql">
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-    <!-- teams section start 
-    <section class="teams" id="teams">
-        <div class="max-width">
-            <h2 class="title">
-My teams</h2>
-<div class="carousel owl-carousel">
-                <div class="card">
-                    <div class="box">
-                        <img src="#" alt="">
-                        <div class="text">
-Someone name</div>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div>
-</div>
-<div class="card">
-                    <div class="box">
-                        <img src="#" alt="">
-                        <div class="text">
-Someone name</div>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div>
-</div>
-<div class="card">
-                    <div class="box">
-                        <img src="#" alt="">
-                        <div class="text">
-Someone name</div>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div>
-</div>
-<div class="card">
-                    <div class="box">
-                        <img src="#" alt="">
-                        <div class="text">
-Someone name</div>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div>
-</div>
-<div class="card">
-                    <div class="box">
-                        <img src="#" alt="">
-                        <div class="text">
-Someone name</div>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-</div>
-</div>
-</div>
-</div>
-</section> -->
-
-    <!-- contact section start -->
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <h2 class="title">
-Contact me</h2>
-<div class="contact-content">
-                <div class="column left">
-                    <div class="text">
-Get in Touch</div>
-<p>
-                If you need web data extraction, automated data pipelines, or data science support for your project, feel free to message me.</p>
-<div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">
-Name</div>
-<div class="sub-title">
-Kiran Kumar Acharya</div>
-</div>
-</div>
-<div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">
-Address</div>
-<div class="sub-title">
-jaljala-8,parbat, Nepal</div>
-</div>
-</div>
-<div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">
-Email</div>
-<div class="sub-title">
-keeran.sharma10@gmail.com</div>
-</div>
-</div>
-</div>
-</div>
-<div class="column right">
-                    <div class="text">
-Message me</div>
-<form action="#">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-<div class="field email">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-</div>
-<div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-<div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-<div class="button">
-                            <button type="submit">Send message</button>
-                        </div>
-</form>
-</div>
-</div>
-</div>
-</section>
-
-    <!-- footer section start -->
-    <footer>
-        <span>Created By <a href="#home">Kiran Kumar Acharya</a> | <span class="far fa-copyright"></span> 2026 All rights reserved.</span>
-    </footer>
-
- <!-- Somehow I got an error, so I comment the script tag, just uncomment to use -->
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
